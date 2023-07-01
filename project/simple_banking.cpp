@@ -12,7 +12,7 @@ int main(){
         
     do {
         cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
-        cout << "\t\t\t Victoria Bank \t\t\t\n";
+        cout << "\t\t\t\t Victoria Bank \t\t\t\n";
         cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
         cout << "1. Show Balance \n";
         cout << "2. Deposit Balance \n";
@@ -20,6 +20,10 @@ int main(){
         cout << "4. Exit \n\n";
         cout << "Your Choice: ";
         cin >> choice;
+
+        cin .clear();
+        fflush(stdin);
+
 
         switch (choice){
             case 1: showBalance(balance);
