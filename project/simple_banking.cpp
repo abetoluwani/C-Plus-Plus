@@ -69,5 +69,16 @@ double withdraw(double balance){
     cout << "Enter Amount To Be Withdrawn : ";
     cin >> amounnt;
 
-    return amounnt;
+    if (balance < amounnt){
+        cout << "Insufficient Funds \n";
+        return 0;
+    }
+    else if (amounnt < 0){
+        cout << "That is not a valid amount \n";
+        return 0;
+    }
+    else {
+        return amounnt;
+    }
+    
 }
