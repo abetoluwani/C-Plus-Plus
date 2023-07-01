@@ -11,13 +11,13 @@ int main(){
         int choice = 0;
         
     do {
-        cout << "\t\t\t ++++++++ \t\t\t\n";
+        cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
         cout << "\t\t\t Victoria Bank \t\t\t\n";
-        cout << "\t\t\t ++++++++ \t\t\t\n";
+        cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
         cout << "1. Show Balance \n";
         cout << "2. Deposit Balance \n";
-        cout << "3. Show Balance \n";
-        cout << "4. Show Balance \n\n";
+        cout << "3. Withdraw Balance \n";
+        cout << "4. Exit \n\n";
         cout << "Your Choice: ";
         cin >> choice;
 
@@ -26,9 +26,11 @@ int main(){
                 break;
             case 2:
                 balance += deposit();
+                showBalance(balance);
                 break;
             case 3:
                 balance -= withdraw(balance);
+                showBalance(balance);
                 break;
             case 4:
                 cout << "Thanks For Visiting \n";
@@ -49,8 +51,23 @@ void showBalance (double balance){
     //  is used to display the decimal of a number 
 }   
 double deposit (){
+    double amount = 0;
+    cout << "Enter Amount To Be Deposited: ";
+    cin >> amount;
 
+    if (amount > 0 ){
+        return amount;
+    }
+    else{
+        cout << "That's Not A Valid Amount";
+    }
 }
-double withdraw(double balance){
 
+double withdraw(double balance){
+    double amounnt;
+     
+    cout << "Enter Amount To Be Withdrawn : ";
+    cin >> amounnt;
+
+    return amounnt;
 }
