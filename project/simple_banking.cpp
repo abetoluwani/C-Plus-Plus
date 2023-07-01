@@ -12,7 +12,7 @@ int main(){
         
     do {
         cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
-        cout << "\t\t\t\t Victoria Bank \t\t\t\n";
+        cout << "\t\t\t   Victoria Bank \t\t\t\n";
         cout << "\t\t\t ++++++++++++++++ \t\t\t\n";
         cout << "1. Show Balance \n";
         cout << "2. Deposit Balance \n";
@@ -21,9 +21,8 @@ int main(){
         cout << "Your Choice: ";
         cin >> choice;
 
-        cin .clear();
-        fflush(stdin);
-
+        cin .clear(); // helps in clearing the error flags which are set when cin fails to interpret the input.
+        fflush(stdin); // used to flush or clear the output buffer of the stream
 
         switch (choice){
             case 1: showBalance(balance);
@@ -65,6 +64,8 @@ double deposit (){
     else{
         cout << "That's Not A Valid Amount";
     }
+
+    return amount;
 }
 
 double withdraw(double balance){
