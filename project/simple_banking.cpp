@@ -21,7 +21,7 @@ int main(){
         cout << "Your Choice: ";
         cin >> choice;
 
-        cin .clear(); // helps in clearing the error flags which are set when cin fails to interpret the input.
+        cin.clear(); // helps in clearing the error flags which are set when cin fails to interpret the input.
         fflush(stdin); // used to flush or clear the output buffer of the stream
 
         switch (choice){
@@ -39,7 +39,7 @@ int main(){
                 cout << "Thanks For Visiting \n";
                 break;
             default :
-            cout << "Invalid Number";
+            cout << "Invalid Input";
                 break;
         }
     }while(choice != 4 );
