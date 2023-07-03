@@ -15,7 +15,7 @@ int main (){
     char computer;
 
     player = userchoice();
-    cout << "Your choice was "; 
+    cout << "Your choice: "; 
     showchoice(player);
 
     computer = computerchoice();
@@ -86,41 +86,39 @@ void winner( char player , char computer){
     {
     case 'r':
         if (computer == 'r'){
-            cout << "It's a tie between the between you and the computer"; 
+            cout << "\nIt's a tie between the between you and the computer"; 
         }
         else if(computer == 'p'){
-            cout << "The computer wins \n Try Better Next Time :)";
+            cout << "\nThe computer wins \n Try Better Next Time :)";
         }
         else{
-            cout << "You win";
+            cout << "\nYou win";
         }
         break;
 
     case 'p':
         if (computer == 'p'){
-            cout << "It's a tie between the between you and the computer"; 
+            cout << "\nIt's a tie between the between you and the computer"; 
         }
         else if(computer == 's'){
-            cout << "The computer wins \n Try Better Next Time :)";
+            cout << "\nThe computer wins \n Try Better Next Time :)";
         }
         else{
-            cout << "You win";
+            cout << "\nYou win";
         }
         break;
 
     case 's':
         if (computer == 's'){
-            cout << "It's a tie between the between you and the computer"; 
+            cout << "\nIt's a tie between the between you and the computer"; 
         }
         else if(computer == 'r'){
-            cout << "The computer wins \n Try Better Next Time :)";
+            cout << "\nThe computer wins \n Try Better Next Time :)";
         }
         else{
-            cout << "You win";
+            cout << "\nYou win";
         }
         break;
     
-    default:
-        break;
     }
 }
