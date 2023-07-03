@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ctime>
+
 
 using namespace std;
 
@@ -15,6 +15,8 @@ int main(){
     cout << "car: " << cars [2] << " Price: "<< price [2] <<"\n";
     cout << "car: " << cars [3] << " Price: "<< price [3] <<"\n";
     cout << "car: " << cars [4] << " Price: "<< price [4] <<"\n";
+
+    // iterate over an array
 
     return 0;
 }
