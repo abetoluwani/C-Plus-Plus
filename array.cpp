@@ -33,8 +33,5 @@ int main()
     {
         cout << students[i] << "\n";
     }
-
-   
-
     return 0;
 }
